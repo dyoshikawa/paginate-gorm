@@ -1,9 +1,9 @@
 package paginator
 
 type Meta struct {
-	Total   uint
-	PerPage uint
-	Current uint
+	Total   uint `json:"total"`
+	PerPage uint `json:"perPage"`
+	Current uint `json:"current"`
 }
 
 type Paginator struct {
