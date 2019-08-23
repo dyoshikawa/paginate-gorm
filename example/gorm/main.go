@@ -51,7 +51,7 @@ func main() {
 		Models:  &posts,
 		Current: 2,
 	})
-	paginator := paginator.Paginate(query)
+	pgntr := paginator.Paginate(query)
 
-	fmt.Println(paginator.Meta)
+	fmt.Println(pgntr.Meta)
 }
