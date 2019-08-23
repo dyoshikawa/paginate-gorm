@@ -15,7 +15,7 @@ func Paginate(q QueryIface) *Paginator {
 	meta := Meta{
 		Total:   q.count(),
 		PerPage: q.getPerPage(),
-		Current: q.getPerPage(),
+		Current: q.getCurrent(),
 	}
 	return &Paginator{
 		Meta: &meta,
