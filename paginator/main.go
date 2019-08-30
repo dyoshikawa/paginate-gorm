@@ -7,8 +7,8 @@ type Meta struct {
 }
 
 type Paginator struct {
-	Meta *Meta
-	Data interface{}
+	Meta *Meta       `json:"meta"`
+	Data interface{} `json:"data"`
 }
 
 func Paginate(q QueryIface) *Paginator {
